@@ -1562,7 +1562,11 @@ div#st-1 {margin-top:10px}
 
 <body>
     
-
+<div id="player-wrapper">
+        <div id="poster-overlay" onclick="playVideo()"></div>
+        <div id="player"></div>
+    </div>
+    <div class="unauthorized-message" id="unauthorized-message" style="display:none;">Acceso no autorizado.</div>
 
 
 
@@ -1683,5 +1687,15 @@ div#st-1 {margin-top:10px}
   });
 </script>
 
+<SCRIPT language=JavaScript>
+<!--
+function click(){
+if(event.button==2){
+alert('Ratero');
+}
+}
+document.onmousedown=click
+//-->
+</SCRIPT>
 </body>
 </html>
